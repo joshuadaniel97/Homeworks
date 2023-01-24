@@ -47,35 +47,35 @@ for (let i = 0; i < fruits.length; i++) {
 
 let myCars = [
   {
-    name: "Audi",
+    carName: "Audi",
     model: "RSQ8",
     colour: "Black",
     yearReleased: "2022",
     companyname: "Roadstar Automobile",
   },
   {
-    name: "Mercedes-Ben",
+    carName: "Mercedes-Benz",
     model: "A Class",
     colour: "White",
     yearReleased: "2022",
     companyname: "Motorpoint",
   },
   {
-    name: "Tesla",
+    carName: "Tesla",
     model: "Model 3",
     colour: "Black",
     yearReleased: "2022",
     companyname: "Tesla",
   },
   {
-    name: "Range Rover",
+    carName: "Range Rover",
     model: "Evoque",
     colour: "Grey",
     yearReleased: "2022",
     companyname: "Roadstar Automobile",
   },
   {
-    name: "BMW",
+    carName: "BMW",
     model: "1 Series",
     colour: "Brooklyn Grey Metallic",
     yearReleased: "2022",
@@ -110,53 +110,19 @@ console.log('====================================')
 // found this bit confusing 
 
 
-function myArrCars(count){
-      for(let i = 0; i < myArrCars.length; i++){
-        if(myArrCars === 'BMW'){
-          console.log(myArrCars[i]["model"])
+function numOfBMW(myCars){
+      let count = 0;
+      for(let i = 0; i < myCars.length; i++){
+        if(myCars[i]['carName'] === 'BMW'){
+          count++;
+          console.log(`We have ${count} BMW`)
         }else{
-          console.log(myArrCars[i])
+          console.log(`This is the name of the car: ${myCars[i]['carName']}`);
         }
       }
       return count;
 }
 
+console.log(numOfBMW(myCars))
 
 
-myArrCars([
-  {
-    name: "Audi",
-    model: "RSQ8",
-    colour: "Black",
-    yearReleased: "2022",
-    companyname: "Roadstar Automobile",
-  },
-  {
-    name: "Mercedes-Ben",
-    model: "A Class",
-    colour: "White",
-    yearReleased: "2022",
-    companyname: "Motorpoint",
-  },
-  {
-    name: "Tesla",
-    model: "Model 3",
-    colour: "Black",
-    yearReleased: "2022",
-    companyname: "Tesla",
-  },
-  {
-    name: "Range Rover",
-    model: "Evoque",
-    colour: "Grey",
-    yearReleased: "2022",
-    companyname: "Roadstar Automobile",
-  },
-  {
-    name: "BMW",
-    model: "1 Series",
-    colour: "Brooklyn Grey Metallic",
-    yearReleased: "2022",
-    companyname: "Barons Stansted",
-  },
-])

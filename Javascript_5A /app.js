@@ -1,7 +1,7 @@
 // 1) Create an array and name it fruits, add some fruits name as strings. console.log
 
-// fruits = ['apples', 'banana', 'grapes', 'oranges', 'mango', 'pear']
-// console.log(fruits)
+fruits = ['apples', 'banana', 'grapes', 'oranges', 'mango', 'pear']
+console.log(fruits)
 
 // 2) Create an Object
 
@@ -42,7 +42,7 @@ let fruits = ["apples", "banana", "grapes", "oranges", "mango", "pear"];
 for (let i = 0; i < fruits.length; i++) {
   console.log(fruits[i]);
 }
-
+console.log('======================')
 // 6) Create an array of 5 objects (car object), each object should have the same keys
 
 let myCars = [
@@ -107,56 +107,22 @@ console.log('====================================')
 
 
 // 9) create a function which will get the array of objects you created in question 6
-// found this bit confusing 
 
 
-function myArrCars(count){
-      for(let i = 0; i < myArrCars.length; i++){
-        if(myArrCars === 'BMW'){
-          console.log(myArrCars[i]["model"])
-        }else{
-          console.log(myArrCars[i])
-        }
-      }
-      return count;
+function numOfBMW(myCars){
+  let count = 0;
+  for(let i = 0; i < numOfBMW.length; i++){
+    if(numOfBMW[i]['name'] === 'BMW'){
+      count++;
+      console.log(`We have ${count} BMW`)
+    }else{
+      console.log(`This is the name of the car: ${myCars[i]['name']}`)
+    }
+  }
+  return count;
 }
 
+console.log(numOfBMW(myCars))
 
 
-myArrCars([
-  {
-    name: "Audi",
-    model: "RSQ8",
-    colour: "Black",
-    yearReleased: "2022",
-    companyname: "Roadstar Automobile",
-  },
-  {
-    name: "Mercedes-Ben",
-    model: "A Class",
-    colour: "White",
-    yearReleased: "2022",
-    companyname: "Motorpoint",
-  },
-  {
-    name: "Tesla",
-    model: "Model 3",
-    colour: "Black",
-    yearReleased: "2022",
-    companyname: "Tesla",
-  },
-  {
-    name: "Range Rover",
-    model: "Evoque",
-    colour: "Grey",
-    yearReleased: "2022",
-    companyname: "Roadstar Automobile",
-  },
-  {
-    name: "BMW",
-    model: "1 Series",
-    colour: "Brooklyn Grey Metallic",
-    yearReleased: "2022",
-    companyname: "Barons Stansted",
-  },
-])
+

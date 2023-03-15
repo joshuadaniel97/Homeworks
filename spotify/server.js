@@ -28,7 +28,7 @@ app.post('/submit', (req, res) => {
   const data = req.body;
   spotifySignUp.push({...data, id : uuid(), email: req.body.email, password: req.body.password, profile: req.body.profile})
   console.log(spotifySignUp)
-  // res.sendFile(__dirname + '/views/confirmation.html')
+  res.sendFile(__dirname + '/views/confirmation.html')
   res.redirect('http://localhost:4000/confirm-user/:id')
 })
 

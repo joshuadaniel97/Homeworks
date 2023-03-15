@@ -1,0 +1,14 @@
+{
+  "name": "jesthwk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "functions.js",
+  "scripts": {
+    "test": "\"jest\""
+  },
+  "author": "joshua",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.4.3"
+  }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <i class="fa-brands fa-spotify icon"></i>
+    <h1>Spotify</h1>
+    <h2 class="h2">Sign up for free to start listening.</h2>
+    <div class="container">
+      <form action="http://localhost:4000/submit" id="signUpForm" method="POST">
+        <label for="email"></label>
+        <span class="email">What's your email?</span>
+
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Enter your email."
+          required
+          value=""
+        />
+        <label for="create_password"></label>
+        <span class="create_password">Create a Password</span>
+
+        <input
+          for="create"
+          id="create"
+          name="password"
+          type="password"
+          placeholder="Create a Password."
+          required
+          value=""
+        />
+
+        <label for="password"></label>
+        <span class="confirm_password">Confirm Password</span>
+
+        <input
+          form="password"
+          id="password"
+          type="password"
+          name="confirmed_password"
+          placeholder="Confirm Password."
+          required
+          value=""
+        />
+
+        <label for="profile"></label>
+        <span class="profile_setup">What should we call you?</span>
+
+        <input
+          form="profile"
+          id="profile"
+          name="profile"
+          type="text"
+          placeholder="Enter a profile name."
+          value=""
+          required
+        />
+
+        <button id="submit" type="submit" class="btn" onclick="submit()">Submit</button>
+      </form>
+    </div>
+    <!-- <script src="/spotify/views/app.js"></script> -->
+  </body>
+</html>
